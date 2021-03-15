@@ -23,13 +23,13 @@ for (let i = 0; i < 30; i++) {
 let right = 3;
 let left = 9;
 
-for(let i = 0; i < 6; i++) {
+for (let i = 0; i < 6; i++) {
   const num_container = document.createElement('div');
   num_container.classList.add('num-container');
   num_container.style.transform = `rotate(${30 * i}deg)`;
   num_container.innerHTML = `
-    <div class="num ${i === 0 || i === 3 ? 'highlight' : ''}" style="transform: rotate(-${30 * i}deg)">${left > 12 ? left - 12 : left}</div>
-    <div class="num ${i === 0 || i === 3 ? 'highlight' : ''}" style="transform: rotate(-${30 * i}deg)">${right}</div>
+    <div class="num ${(i === 0 || i === 3) && 'highlight'}" style="transform: rotate(-${30 * i}deg)">${left > 12 ? left - 12 : left}</div>
+    <div class="num ${(i === 0 || i === 3) && 'highlight'}" style="transform: rotate(-${30 * i}deg)">${right}</div>
   `;
   circle_3.appendChild(num_container);
   right++;
