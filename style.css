@@ -6,19 +6,17 @@
 
 body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
   font-family: 'Lobster', cursive;
-  overflow: hidden;
 }
 
 .container {
   position: relative;
   width: 600px;
   height: 600px;
-  margin: auto;
 }
 
 .circle1 {
